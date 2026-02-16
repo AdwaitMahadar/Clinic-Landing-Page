@@ -41,10 +41,10 @@ export function Navbar() {
         >
           <Link href="/" className="flex items-center gap-3">
             <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary">
-              <span className="text-sm font-bold text-primary-foreground">S</span>
+              <span className="text-sm font-bold text-primary-foreground">SSC</span>
             </div>
             <span className="font-display text-base font-semibold tracking-tight text-foreground">
-              Summit
+              Shree Sai Clinic
             </span>
           </Link>
 

@@ -37,7 +37,7 @@ export function Footer() {
                 <span className="text-sm font-bold text-primary-foreground">S</span>
               </div>
               <span className="font-display text-base font-semibold tracking-tight text-foreground">
-                Summit
+                Shree Sai Clinic
               </span>
             </Link>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted-foreground">

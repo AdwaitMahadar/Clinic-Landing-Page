@@ -13,7 +13,7 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: "Summit Orthopedics | Movement Without Limits",
+  title: "Shree Sai Ortho Clinic | The Bone & Joint Clinic",
   description:
     "World-class orthopedic care. Board-certified specialists, robotic-assisted surgery, and a patient-first philosophy. Get back to your life.",
 }

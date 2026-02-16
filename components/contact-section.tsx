@@ -27,7 +27,7 @@ const contactDetails = [
   {
     icon: Mail,
     label: "Email",
-    value: "info@summitortho.com",
+    value: "info@shreesaiortho.com",
     secondary: "Response within 24 hours",
   },
 ]

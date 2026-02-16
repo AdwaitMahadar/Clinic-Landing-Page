@@ -24,13 +24,13 @@ export function AboutSection() {
         >
           <motion.div variants={fadeUp} className="max-w-2xl">
             <span className="inline-block rounded-full border border-accent/20 bg-accent/10 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-accent">
-              Why Summit
+              Why Shree Sai Ortho Clinic
             </span>
             <h2 className="mt-5 font-display text-4xl font-semibold tracking-tight text-foreground md:text-5xl text-balance">
               A new standard in orthopedic care
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-              For over 25 years, Summit Orthopedics has combined cutting-edge
+              For over 20 years, Shree Sai Ortho Clinic has combined cutting-edge
               technology with a patient-first philosophy to deliver outcomes that
               exceed expectations.
             </p>
