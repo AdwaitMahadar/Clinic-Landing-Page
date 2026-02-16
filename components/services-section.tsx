@@ -107,10 +107,13 @@ export function ServicesSection() {
                   {service.description}
                 </p>
 
-                <div className="mt-8 flex items-center gap-2 text-sm font-medium text-accent opacity-0 transition-all duration-300 group-hover:opacity-100">
+                <Link
+                  href="#contact"
+                  className="mt-8 flex items-center gap-2 text-sm font-medium text-accent opacity-0 transition-all duration-300 group-hover:opacity-100"
+                >
                   Learn more
                   <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                </div>
+                </Link>
               </div>
             </motion.div>
           ))}

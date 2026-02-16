@@ -9,13 +9,14 @@ const contactDetails = [
   {
     icon: MapPin,
     label: "Visit Us",
-    value: "1200 Medical Center Drive, Suite 300",
-    secondary: "Riverside, CA 92501",
+    value: "Morewadi, Pimpri, Pune",
+    secondary: "Maharashtra, 411018",
+    href: "https://maps.app.goo.gl/B4SKwGjRCvKvypvk6?g_st=i&utm_campaign=ac-im",
   },
   {
     icon: Phone,
     label: "Call Us",
-    value: "(555) 123-4567",
+    value: "(955) 252-6803",
     secondary: "Mon - Fri, 8 AM - 5 PM",
   },
   {
@@ -59,27 +60,41 @@ export function ContactSection() {
             </p>
 
             <div className="mt-12 grid gap-4 sm:grid-cols-2">
-              {contactDetails.map((item) => (
-                <div
-                  key={item.label}
-                  className="flex gap-4 rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:border-accent/20 hover:shadow-md"
-                >
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent/10">
-                    <item.icon className="h-4 w-4 text-accent" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-foreground">
-                      {item.label}
-                    </p>
-                    <p className="mt-0.5 text-sm text-muted-foreground">
-                      {item.value}
-                    </p>
-                    <p className="text-xs text-muted-foreground/70">
-                      {item.secondary}
-                    </p>
-                  </div>
-                </div>
-              ))}
+              {contactDetails.map((item) => {
+                const Component = item.href ? "a" : "div"
+                const props = item.href
+                  ? {
+                      href: item.href,
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                    }
+                  : {}
+
+                return (
+                  <Component
+                    key={item.label}
+                    className={`flex gap-4 rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:border-accent/20 hover:shadow-md ${
+                      item.href ? "cursor-pointer hover:bg-accent/[0.02]" : ""
+                    }`}
+                    {...props}
+                  >
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent/10">
+                      <item.icon className="h-4 w-4 text-accent" />
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold text-foreground">
+                        {item.label}
+                      </p>
+                      <p className="mt-0.5 text-sm text-muted-foreground">
+                        {item.value}
+                      </p>
+                      <p className="text-xs text-muted-foreground/70">
+                        {item.secondary}
+                      </p>
+                    </div>
+                  </Component>
+                )
+              })}
             </div>
           </motion.div>
 
@@ -151,7 +166,7 @@ export function ContactSection() {
                   <input
                     id="phone"
                     type="tel"
-                    placeholder="(555) 000-0000"
+                    placeholder="(955) 252-6803"
                     className="rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 transition-colors focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20"
                   />
                 </div>

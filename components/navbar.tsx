@@ -63,11 +63,11 @@ export function Navbar() {
 
           <div className="hidden items-center gap-3 lg:flex">
             <Link
-              href="tel:+15551234567"
+              href="tel:+919552526803"
               className="flex items-center gap-2 px-4 py-2 text-[13px] font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               <Phone className="h-3.5 w-3.5" />
-              (555) 123-4567
+              (955) 252-6803
             </Link>
             <Link
               href="#contact"

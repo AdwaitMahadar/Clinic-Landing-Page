@@ -70,11 +70,11 @@ export function CtaSection() {
                 <ArrowUpRight className="h-4 w-4" />
               </Link>
               <Link
-                href="tel:+15551234567"
+                href="tel:+919552526803"
                 className="magnetic-btn flex items-center gap-2 rounded-xl border border-primary-foreground/15 bg-primary-foreground/5 px-8 py-4 text-sm font-medium text-primary-foreground backdrop-blur-sm transition-all hover:bg-primary-foreground/10"
               >
                 <Phone className="h-3.5 w-3.5" />
-                Call (555) 123-4567
+                Call (955) 252-6803
               </Link>
             </motion.div>
           </div>

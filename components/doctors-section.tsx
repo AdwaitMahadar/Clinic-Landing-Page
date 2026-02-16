@@ -8,14 +8,14 @@ import { fadeUp, staggerContainer } from "@/lib/motion"
 
 const doctors = [
   {
-    name: "Dr. Robert Caldwell",
+    name: "Dr. Abhijeet Mahadar",
     specialty: "Joint Replacement",
     image: "/images/doctor-portrait.jpg",
-    bio: "Fellowship-trained at the Hospital for Special Surgery. 15+ years in robotic-assisted joint replacement.",
-    experience: "15+ yrs",
+    bio: "Fellowship-trained at the Hospital for Special Surgery. 20+ years in robotic-assisted joint replacement.",
+    experience: "20+ yrs",
   },
   {
-    name: "Dr. Sarah Mitchell",
+    name: "Dr. Madhuri Mahadar",
     specialty: "Spine Surgery",
     image: "/images/doctor-2.jpg",
     bio: "Double board-certified in orthopedic surgery and pain medicine. Pioneer in minimally invasive spine techniques.",
